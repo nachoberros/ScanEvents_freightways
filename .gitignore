@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ScanEventsWorker
+/ScanEvents.Tests/bin/Debug/net8.0
+/ScanEvents.Tests/obj
+/ScanEventsWorker/bin/Debug/net8.0
+/ScanEventsWorker/obj/Debug/net8.0
+/ScanEventsWorker/obj
+/ScanEventsWorker.Tests/obj
+*.UpdatedAt)

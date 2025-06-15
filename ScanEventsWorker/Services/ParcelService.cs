@@ -26,13 +26,13 @@ namespace ScanEventsWorker.Services
                 _logger.LogDebug("Updated last event for ParcelId {ParcelId}: Type = {Type}, Time = {Time}", parcel.Id, parcel.LastEventType, parcel.LastEventTime);
             }
 
-            if (scanEvent.Type == ScanEventType.PICKUP && parcel.PickupTime == null)
+            if (scanEvent.Type == ScanEventType.PICKUP)
             {
                 parcel.PickupTime = scanEvent.CreatedDateTimeUtc;
                 _logger.LogInformation("Set PickupTime for ParcelId {ParcelId} to {PickupTime}", parcel.Id, parcel.PickupTime);
             }
 
-            if (scanEvent.Type == ScanEventType.DELIVERY && parcel.DeliveryTime == null)
+            if (scanEvent.Type == ScanEventType.DELIVERY)
             {
                 parcel.DeliveryTime = scanEvent.CreatedDateTimeUtc;
                 _logger.LogInformation("Set DeliveryTime for ParcelId {ParcelId} to {DeliveryTime}", parcel.Id, parcel.DeliveryTime);

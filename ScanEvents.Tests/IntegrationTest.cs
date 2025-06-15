@@ -13,7 +13,7 @@ namespace ScanEvents.Tests
 {
 
     [TestFixture]
-    public class IntegrationPipelineTests : IDisposable
+    public class IntegrationTest : IDisposable
     {
         private ScanEventsContext _dbContext;
         private ScanEventService _scanEventService;

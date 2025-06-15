@@ -10,3 +10,5 @@
 /ScanEventsWorker/obj
 /ScanEventsWorker.Tests/obj
 *.UpdatedAt)
+/.vs
+/ScanEvents.Tests/bin/Release/net8.0

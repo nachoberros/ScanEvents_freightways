@@ -64,11 +64,11 @@ namespace ScanEventsWorker.Services
 
         private async Task<int?> GetLastEventIdAsync()
         {
-            var tracker = await _context.ScanEvents
+            var scanEvent = await _context.ScanEvents
                 .OrderByDescending(e => e.EventId)
                 .FirstOrDefaultAsync();
 
-            return tracker?.EventId;
+            return scanEvent?.EventId;
         }
 
         private async Task<ScanEventResponse?> FetchEventsAsync(int? lastEventId)
